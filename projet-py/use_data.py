@@ -38,7 +38,7 @@ for coord_list in coordinate_lists:
     print(coord_list)
 
 # Write the data back to a new JSON file with UTF-8 encoding
-with open('output_utf8.json', 'w', encoding='utf-8') as f:
+with open('projet-py/outputs/other/output_utf8.json', 'w', encoding='utf-8') as f:
     json.dump(data, f, ensure_ascii=False, indent=2)
 
-print("\nThe UTF-8 encoded JSON has been written to 'output_utf8.json'")
+print("\nThe UTF-8 encoded JSON has been written to 'projet-py/outputs/other/output_utf8.json'")
