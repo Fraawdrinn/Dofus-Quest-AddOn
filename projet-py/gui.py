@@ -17,8 +17,10 @@ def create_overlay():
     label = tk.Label(root, text="This is an overlay window", font=("Arial", 14))
     label.pack(pady=50)
 
+    # Obtenir le handle de la fenêtre Tkinter (HWND)
+    hwnd = win32gui.GetParent(root.winfo_id())  # Utilisation de GetParent pour obtenir le HWND
+
     # Appliquer l'overlay avec pywin32
-    hwnd = win32gui.GetHWND(root.winfo_id())  # Obtenir le handle de la fenêtre Tkinter
     win32gui.SetWindowPos(hwnd, win32con.HWND_TOPMOST, 0, 0, 0, 0, win32con.SWP_NOMOVE | win32con.SWP_NOSIZE)
 
     # Exécuter l'interface Tkinter
