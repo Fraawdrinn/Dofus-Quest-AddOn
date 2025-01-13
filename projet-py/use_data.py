@@ -7,20 +7,20 @@ class Data:
         self.file_path = file_path
         self.data = self._load_data()
 
-    def _load_data(self):
+    def _load_data(self) -> json:
         """"""
-        #Load JSON data from the file.
-        with self.file_path.open(encoding="utf-8") as quest_file:
+        # Load JSON data from the file.
+        with open(self.file_path, encoding="utf-8") as quest_file:
             return json.load(quest_file)
 
     def find_all_pos_coordinates(self, data=None):
         """"""
-        #Recursively find all posX and posY coordinates in the data.
+        # Recursively find all posX and posY coordinates in the data.
         if data is None:
             data = self.data
 
         results = []
-        stack = [data]  #avoid recursion depth issues(chatGPT)
+        stack = [data]  # Avoid recursion depth issues(chatGPT)
 
         while stack:
             current = stack.pop()
@@ -38,7 +38,7 @@ class Data:
 
     def get_unique_coordinates(self):
         """"""
-        #Extract unique posX and posY coordinates as a list of lists.( The one we need to use)
+        # Extract unique posX and posY coordinates as a list of lists. (The one we need to use)
         all_pos_coordinates = self.find_all_pos_coordinates()
 
         # Remove duplicates while maintaining order
@@ -53,7 +53,7 @@ class Data:
 
     def get_grouped_coordinates(self):
         """"""
-        #Group coordinates by their values.( Useless af in my opinion)
+        # Group coordinates by their values. (Useless af in my opinion)
         all_pos_coordinates = self.find_all_pos_coordinates()
 
         grouped_coordinates = {}
