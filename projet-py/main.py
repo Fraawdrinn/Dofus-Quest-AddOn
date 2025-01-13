@@ -50,7 +50,6 @@ def create_overlay():
 
 def main():
     create_overlay()
-    return
 
 if __name__ == "__main__":
     main()

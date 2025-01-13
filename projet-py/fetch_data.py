@@ -7,10 +7,9 @@ object:str = "quests"
 id:str = "1653"
 
 
-def get_paginated_items(page: int=1, limit: int=500):
+def get_paginated_items():
     endpoint = f"{BASE_URL}/{object}/{id}"
     api_status_code: int = 200
-    # params = {"page": page, "limit": limit}  # Pagination parameters
 
     try:
         response = requests.get(endpoint,)

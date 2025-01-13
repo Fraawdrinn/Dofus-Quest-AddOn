@@ -1,21 +1,22 @@
 import json
+from pathlib import Path
+
 
 class Data:
     """"""
     def __init__(self, file_path: str):
         """"""
-        self.file_path = file_path
+        self.file_path = Path(file_path)
         self.data = self._load_data()
 
     def _load_data(self) -> json:
         """"""
         # Load JSON data from the file.
-        with open(self.file_path, encoding="utf-8") as quest_file:
+        with self.file_path.open(encoding="utf-8") as quest_file:
             return json.load(quest_file)
 
-    def find_all_pos_coordinates(self, data=None):
-        """"""
-        # Recursively find all posX and posY coordinates in the data.
+    def find_all_pos_coordinates(self, data: None=None) -> list:
+        """Recursively find all posX and posY coordinates in the data."""
         if data is None:
             data = self.data
 
@@ -36,9 +37,8 @@ class Data:
 
         return results
 
-    def get_unique_coordinates(self):
-        """"""
-        # Extract unique posX and posY coordinates as a list of lists. (The one we need to use)
+    def get_unique_coordinates(self) -> list:
+        """Extract unique posX and posY coordinates as a list of lists."""
         all_pos_coordinates = self.find_all_pos_coordinates()
 
         # Remove duplicates while maintaining order
@@ -51,9 +51,8 @@ class Data:
 
         return [[x, y] for x, y in unique_coordinates]
 
-    def get_grouped_coordinates(self):
-        """"""
-        # Group coordinates by their values. (Useless af in my opinion)
+    def get_grouped_coordinates(self) -> list:
+        """Group coordinates by their values."""
         all_pos_coordinates = self.find_all_pos_coordinates()
 
         grouped_coordinates = {}
