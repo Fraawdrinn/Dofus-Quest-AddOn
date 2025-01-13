@@ -1,16 +1,20 @@
 import json
 
-class UseData:
-    def __init__(self, file_path):
+class Data:
+    """"""
+    def __init__(self, file_path: str):
+        """"""
         self.file_path = file_path
         self.data = self._load_data()
 
     def _load_data(self):
+        """"""
         #Load JSON data from the file.
-        with open(self.file_path, 'r', encoding='utf-8') as quest_file:
+        with self.file_path.open(encoding="utf-8") as quest_file:
             return json.load(quest_file)
 
     def find_all_pos_coordinates(self, data=None):
+        """"""
         #Recursively find all posX and posY coordinates in the data.
         if data is None:
             data = self.data
@@ -33,6 +37,7 @@ class UseData:
         return results
 
     def get_unique_coordinates(self):
+        """"""
         #Extract unique posX and posY coordinates as a list of lists.( The one we need to use)
         all_pos_coordinates = self.find_all_pos_coordinates()
 
@@ -47,6 +52,7 @@ class UseData:
         return [[x, y] for x, y in unique_coordinates]
 
     def get_grouped_coordinates(self):
+        """"""
         #Group coordinates by their values.( Useless af in my opinion)
         all_pos_coordinates = self.find_all_pos_coordinates()
 
@@ -58,14 +64,14 @@ class UseData:
 
         return list(grouped_coordinates.values())
 
+file_path = "projet-py/outputs/quests/quests_1653.json"
+extractor = Data(file_path)
 
-# exemple
-if __name__ == "__main__":
-    file_path = "projet-py/outputs/quests/quests_1653.json"
-    extractor = UseData(file_path)
+#unique coordinates
+unique_coordinates = extractor.get_unique_coordinates()
 
-    #unique coordinates
-    unique_coordinates = extractor.get_unique_coordinates()
+def main():
+    """"""
     print("Unique coordinates as a list of lists:")
     print(unique_coordinates)
 
@@ -73,3 +79,6 @@ if __name__ == "__main__":
     grouped_coordinates = extractor.get_grouped_coordinates()
     print("Grouped coordinates:")
     print(grouped_coordinates)
+
+if __name__ == "__main__":
+    main()
