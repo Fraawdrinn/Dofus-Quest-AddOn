@@ -1,28 +1,35 @@
 import tkinter as tk
 import win32gui
 import win32con
+import ctypes
 
-# Création de la fenêtre Tkinter
+root = tk.Tk()
+root.title("Overlay Example")
+root.resizable(False, False)
+root.geometry("300x200+500+300")
+root.update_idletasks()  # S'assurer que la fenêtre est créée
+hwnd = ctypes.windll.user32.GetForegroundWindow()  # Utiliser ctypes pour obtenir le handle valide
+
+ex_style = win32gui.GetWindowLong(hwnd, win32con.GWL_EXSTYLE) # Appliquer l'overlay avec pywin32
+win32gui.SetWindowLong(hwnd, win32con.GWL_EXSTYLE, ex_style | win32con.WS_EX_LAYERED | win32con.WS_EX_TOPMOST)
+
+# Ajuster la transparence si nécessaire (par exemple : 255 pour opaque)
+win32gui.SetLayeredWindowAttributes(hwnd, 0, 255, win32con.LWA_ALPHA)
+
+
+# Fonction pour configurer l'overlay
 def create_overlay():
-    root = tk.Tk()
-    root.title("Overlay Example")
-    
-    # Empêche la fenêtre d'être redimensionnée
-    root.resizable(False, False)
-
-    # Dimensions et position de la fenêtre
-    root.geometry("300x200+500+300")
-
     # Ajouter un widget pour afficher un texte
     label = tk.Label(root, text="This is an overlay window", font=("Arial", 14))
     label.pack(pady=50)
 
-    # Obtenir le handle de la fenêtre Tkinter (HWND)
-    hwnd = win32gui.GetParent(root.winfo_id())  # Utilisation de GetParent pour obtenir le HWND
+    
+    
+    
 
-    # Appliquer l'overlay avec pywin32
-    win32gui.SetWindowPos(hwnd, win32con.HWND_TOPMOST, 0, 0, 0, 0, win32con.SWP_NOMOVE | win32con.SWP_NOSIZE)
-
+    # Garder la fenêtre en haut avec Tkinter
+    root.attributes("-topmost", True)
+    
     # Exécuter l'interface Tkinter
     root.mainloop()
 
