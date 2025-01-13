@@ -1,26 +1,19 @@
 # Dofus-Quest-AddOn
 
-## Add-on overlay for Dofus players
+Add-on overlay for Dofus players
 
 ---
 
-# For developers
-## Requirement
-### On Windows
+## For developers
+### Requirement
+#### Python libraries
 
-Use command: 'DQA-venv\Scripts\activate' to work with python libraries
-Then, use command: pip install -r requirements.txt
-
-### On Linux/MacOS
-
-Use command 'source DQA-venv/bin/activate' --
-Then, use command: pip install -r requirements.txt
+```pip install -r requirements.txt```
 
 
 
 <!-- 
 TODO:
- - Manage venv 
  - Data analyse
  - In-game window
 
