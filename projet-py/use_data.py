@@ -1,47 +1,75 @@
 import json
 
-def find_all_pos_coordinates(data):
-    results = []
-    if isinstance(data, dict):
-        for key, value in data.items():
-            if key == "map" and isinstance(value, dict) and "posX" in value and "posY" in value:
-                results.append((value["posX"], value["posY"]))
-            else:
-                results.extend(find_all_pos_coordinates(value))
-    elif isinstance(data, list):
-        for item in data:
-            results.extend(find_all_pos_coordinates(item))
-    return results
+class UseData:
+    def __init__(self, file_path):
+        self.file_path = file_path
+        self.data = self._load_data()
 
-# Read the JSON file with UTF-8 encoding
-with open("projet-py/outputs/quests/quests_1653.json", 'r', encoding='utf-8') as questFile:
-    data = json.load(questFile)
+    def _load_data(self):
+        #Load JSON data from the file.
+        with open(self.file_path, 'r', encoding='utf-8') as quest_file:
+            return json.load(quest_file)
 
-# Find all posX and posY values
-all_pos_coordinates = find_all_pos_coordinates(data)
+    def find_all_pos_coordinates(self, data=None):
+        #Recursively find all posX and posY coordinates in the data.
+        if data is None:
+            data = self.data
 
-# Group coordinates by their values
-grouped_coordinates = {}
-for coord in all_pos_coordinates:
-    if coord not in grouped_coordinates:
-        grouped_coordinates[coord] = []
-    grouped_coordinates[coord].append(coord)
+        results = []
+        stack = [data]  #avoid recursion depth issues(chatGPT)
 
-# Convert to list of lists
-coordinate_lists = list(grouped_coordinates.values())
+        while stack:
+            current = stack.pop()
+
+            if isinstance(current, dict):
+                for key, value in current.items():
+                    if key == "map" and isinstance(value, dict) and "posX" in value and "posY" in value:
+                        results.append((value["posX"], value["posY"]))
+                    else:
+                        stack.append(value)
+            elif isinstance(current, list):
+                stack.extend(current)
+
+        return results
+
+    def get_unique_coordinates(self):
+        #Extract unique posX and posY coordinates as a list of lists.( The one we need to use)
+        all_pos_coordinates = self.find_all_pos_coordinates()
+
+        # Remove duplicates while maintaining order
+        seen = set()
+        unique_coordinates = []
+        for coord in all_pos_coordinates:
+            if coord not in seen:
+                unique_coordinates.append(coord)
+                seen.add(coord)
+
+        return [[x, y] for x, y in unique_coordinates]
+
+    def get_grouped_coordinates(self):
+        #Group coordinates by their values.( Useless af in my opinion)
+        all_pos_coordinates = self.find_all_pos_coordinates()
+
+        grouped_coordinates = {}
+        for coord in all_pos_coordinates:
+            if coord not in grouped_coordinates:
+                grouped_coordinates[coord] = []
+            grouped_coordinates[coord].append(coord)
+
+        return list(grouped_coordinates.values())
 
 
-# Remove duplicates while maintaining order
-seen = set()
-unique_coordinates = []
-for coord in all_pos_coordinates:
-    if coord not in seen:
-        unique_coordinates.append(coord)
-        seen.add(coord)
+# exemple
+if __name__ == "__main__":
+    file_path = "projet-py/outputs/quests/quests_1653.json"
+    extractor = UseData(file_path)
 
-# Convert the unique coordinates to a list of lists
-coordinates_list_of_lists = [[x, y] for x, y in unique_coordinates]
+    #unique coordinates
+    unique_coordinates = extractor.get_unique_coordinates()
+    print("Unique coordinates as a list of lists:")
+    print(unique_coordinates)
 
-# Print the list of lists
-print("Coordinates as a list of lists:")
-print(coordinates_list_of_lists)
+    #grouped coordinates
+    grouped_coordinates = extractor.get_grouped_coordinates()
+    print("Grouped coordinates:")
+    print(grouped_coordinates)
