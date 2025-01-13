@@ -1,19 +1,21 @@
-import requests
 import json
 
+import requests
+
 BASE_URL = "https://api.dofusdb.fr"
-object = "quests"
-id = "1653"
+object:str = "quests"
+id:str = "1653"
 
 
-def get_paginated_items(page=1, limit=500):
+def get_paginated_items(page: int=1, limit: int=500):
     endpoint = f"{BASE_URL}/{object}/{id}"
-    params = {"page": page, "limit": limit}  # Pagination parameters
+    api_status_code: int = 200
+    # params = {"page": page, "limit": limit}  # Pagination parameters
+
     try:
         response = requests.get(endpoint,)
-        if response.status_code == 200:
-            data = response.json()
-            return data
+        if response.status_code == api_status_code:
+            return response.json()
         else:
             # Response error
             print(f"Error: Received status code {response.status_code}")
