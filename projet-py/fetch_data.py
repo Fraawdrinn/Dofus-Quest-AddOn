@@ -12,7 +12,7 @@ def get_paginated_items():
     api_status_code: int = 200
 
     try:
-        response = requests.get(endpoint,)
+        response = requests.get(endpoint,) #httpx
         if response.status_code == api_status_code:
             return response.json()
         else:

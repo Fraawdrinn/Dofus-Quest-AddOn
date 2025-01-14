@@ -1,5 +1,8 @@
+import ctypes
 import tkinter as tk
 
+import win32con
+import win32gui
 from use_data import Data
 
 # Tkinter init
@@ -14,34 +17,37 @@ root.geometry(f"{WIDTH}x{HEIGHT}+{POSX}+{POSY}")  # Set window size and position
 
 # Assure la mise à jour complète de la fenêtre avant toute interaction
 root.update_idletasks()
-
-# Keep the window on top
+# Récupère le handle de la fenêtre actuellement au premier plan
+hwnd = ctypes.windll.user32.GetForegroundWindow()
+# Garder la fenêtre en haut avec Tkinter
 root.attributes("-topmost", True)  # noqa: FBT003
-
-# Make the window transparent (optional)
-root.attributes("-alpha", 0.9)  # Adjust alpha for transparency (1.0 = opaque)
-
-# Remove window decorations for an overlay effect
-root.overrideredirect(boolean=True)
+# Appliquer l'overlay avec pywin32
+ex_style = win32gui.GetWindowLong(hwnd, win32con.GWL_EXSTYLE)
+win32gui.SetWindowLong(
+    hwnd,
+    win32con.GWL_EXSTYLE,
+    ex_style | win32con.WS_EX_LAYERED | win32con.WS_EX_TOPMOST,
+    )
+# Ajuster la transparence si nécessaire (par exemple : 255 pour opaque)
+win32gui.SetLayeredWindowAttributes(hwnd, 0, 255, win32con.LWA_ALPHA)
 
 data_dir: str = "quests"
 data_to_fetch: str = "quests_1653.json"
 file_path: str = f"projet-py/outputs/{data_dir}/{data_to_fetch}"
 extractor: Data = Data(file_path)
-
-# Get unique coordinates from the data
+#unique coordinates
 unique_coordinates: list = extractor.get_unique_coordinates()
 print("coordinates : ", unique_coordinates)
 
-# Function to configure the overlay
+# Fonction pour configurer l'overlay
 def create_overlay() -> None:
-    """Display the window and the collected information."""
-    # Add a widget to display text
+    """Display the window and the collected informations."""
+    # Ajouter un widget pour afficher un texte
     for coord in unique_coordinates:
-        label = tk.Label(root, text=coord, font=("Arial", 14), bg="white")
+        label = tk.Label(root, text=coord, font=("Arial", 14))
         label.pack(pady=5)
 
-    # Run the Tkinter interface
+    # Exécuter l'interface Tkinter
     root.mainloop()
 
 def main() -> None:
@@ -50,4 +56,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

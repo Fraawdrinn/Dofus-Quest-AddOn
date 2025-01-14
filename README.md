@@ -13,6 +13,8 @@ Add-on overlay for Dofus players
 
 
 <!-- 
+use qt pyside
+
 TODO:
  - Data analyse
  - In-game window
