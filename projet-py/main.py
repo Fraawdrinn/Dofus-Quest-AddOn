@@ -1,53 +1,66 @@
-import tkinter as tk
+import sys  # noqa: D100
 
+from PyQt5 import QtCore, QtGui, QtWidgets
 from use_data import Data
 
-# Tkinter init
-root = tk.Tk()
-root.title("Overlay Example")
-root.resizable(width=False, height=False)
-WIDTH = 300
-HEIGHT = 400
-POSX = 1500
-POSY = 300
-root.geometry(f"{WIDTH}x{HEIGHT}+{POSX}+{POSY}")  # Set window size and position
 
-# Assure la mise à jour complète de la fenêtre avant toute interaction
-root.update_idletasks()
+class OverlayApp(QtWidgets.QWidget):
+    """Overlay App using Qt."""
 
-# Keep the window on top
-root.attributes("-topmost", True)  # noqa: FBT003
+    def __init__(self, unique_coordinates: list) -> None:
+        """Init Overlay App."""
+        super().__init__()
+        self.unique_coordinates = unique_coordinates
+        self.init_ui()
 
-# Make the window transparent (optional)
-root.attributes("-alpha", 0.9)  # Adjust alpha for transparency (1.0 = opaque)
+    def init_ui(self) -> None:
+        """Init window."""
+        # Set window properties
+        self.setWindowTitle("Overlay Example")
+        self.setFixedSize(300, 400)
+        self.setGeometry(1500, 300, 300, 400)
+        self.setWindowFlags(
+            QtCore.Qt.WindowStaysOnTopHint,
+            #| QtCore.Qt.FramelessWindowHint
+            #| QtCore.Qt.Tool,  # Ensures no taskbar icon
+        )
+        self.setAttribute(QtCore.Qt.WA_TranslucentBackground)
+        self.setWindowOpacity(0.9)  # Transparency (1.0 = opaque)
 
-# Remove window decorations for an overlay effect
-root.overrideredirect(boolean=True)
+        # Layout and label setup
+        layout = QtWidgets.QVBoxLayout(self)
+        layout.setContentsMargins(10, 10, 10, 10)
 
-data_dir: str = "quests"
-data_to_fetch: str = "quests_1653.json"
-file_path: str = f"projet-py/outputs/{data_dir}/{data_to_fetch}"
-extractor: Data = Data(file_path)
+        # Add labels for coordinates
+        for coord in self.unique_coordinates:
+            label = QtWidgets.QLabel(str(coord), self)
+            label.setFont(QtGui.QFont("Arial", 14))
+            label.setStyleSheet("""
+                background-color: white;
+                padding: 5px;
+            """)
+            label.setAlignment(QtCore.Qt.AlignCenter)
+            layout.addWidget(label)
 
-# Get unique coordinates from the data
-unique_coordinates: list = extractor.get_unique_coordinates()
-print("coordinates : ", unique_coordinates)
+        self.setLayout(layout)
 
-# Function to configure the overlay
-def create_overlay() -> None:
-    """Display the window and the collected information."""
-    # Add a widget to display text
-    for coord in unique_coordinates:
-        label = tk.Label(root, text=coord, font=("Arial", 14), bg="white")
-        label.pack(pady=5)
-
-    # Run the Tkinter interface
-    root.mainloop()
 
 def main() -> None:
-    """Execute the main functions."""
-    create_overlay()
+    """Execute main program."""
+    # Load data
+    data_dir: str = "quests"
+    data_to_fetch: str = "quests_1653.json"
+    file_path: str = f"projet-py/outputs/{data_dir}/{data_to_fetch}"
+
+    extractor = Data(file_path)
+    unique_coordinates = extractor.get_unique_coordinates()
+
+    # Create and run the application
+    app = QtWidgets.QApplication(sys.argv)
+    overlay = OverlayApp(unique_coordinates)
+    overlay.show()
+    sys.exit(app.exec_())
+
 
 if __name__ == "__main__":
     main()
-
