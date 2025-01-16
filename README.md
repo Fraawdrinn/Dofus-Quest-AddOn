@@ -16,10 +16,15 @@ Add-on overlay for Dofus players
 use qt pyside
 
 TODO:
+ - Create a menu (and search alogrithm)
+ - - Match quests name and id
+
  - Data analyse
+
  - In-game window
 
  - get player coords
- - match players coords with data received
+ - -  match players coords with data received
+
  - show direction with UI
  -->

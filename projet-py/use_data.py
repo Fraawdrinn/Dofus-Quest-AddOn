@@ -1,16 +1,17 @@
-import json
+import json  # noqa: D100
 from pathlib import Path
 
 
 class Data:
-    """"""
-    def __init__(self, file_path: str):
-        """"""
+    """Retreive data from json file and exlpoit it."""
+
+    def __init__(self, file_path: str) -> None:
+        """Class init."""
         self.file_path = Path(file_path)
         self.data = self._load_data()
 
     def _load_data(self) -> json:
-        """"""
+        """Enable storing json data in a variable."""
         # Load JSON data from the file.
         with self.file_path.open(encoding="utf-8") as quest_file:
             return json.load(quest_file)

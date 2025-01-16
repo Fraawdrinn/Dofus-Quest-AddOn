@@ -1,36 +1,33 @@
 import json
+from pathlib import Path
 
-import requests
+import httpx
 
 BASE_URL = "https://api.dofusdb.fr"
-object:str = "quests"
-id:str = "1653"
+category: str = "quests"
+category_id: str = "1653"
 
-
-def get_paginated_items():
-    endpoint = f"{BASE_URL}/{object}/{id}"
+def get_paginated_items():  # noqa: ANN201
+    """Fetch API data using httpx and return JSON response."""
+    endpoint = f"{BASE_URL}/{category}/{category_id}"
     api_status_code: int = 200
 
     try:
-        response = requests.get(endpoint,) #httpx
-        if response.status_code == api_status_code:
-            return response.json()
-        else:
-            # Response error
-            print(f"Error: Received status code {response.status_code}")
-            print(response.text)
-        #  URL error
-    except requests.exceptions.RequestException as e:
-        print(f"Error: {e}")
+        # Use httpx to send a GET request
+        with httpx.Client(timeout=10) as client:
+            response = client.get(endpoint)
+            if response.status_code == api_status_code:
+                return response.json()
+    except httpx.RequestError:
+        return None
 
 # Fetch items
-items = get_paginated_items(page=1, limit=500)
+items = get_paginated_items()
 
-# Save the data to a JSON file
+# Save the data to a JSON file if items exist
 if items:
-    with open(f"outputs/{object}/{object}_{id}.json", "w", encoding="utf-8") as file:
-        json.dump(items, file, ensure_ascii=False, indent=4)  # Pretty print with indent
-    print(f"Data saved to {object}_{id}.json")
-else:
-    print("No data to save.")
-
+    output_dir = Path(f"outputs/{category}")
+    output_dir.mkdir(parents=True, exist_ok=True)
+    output_file = output_dir / f"{category}_{category_id}.json"
+    with output_file.open("w", encoding="utf-8") as file:
+        json.dump(items, file, ensure_ascii=False, indent=4)
