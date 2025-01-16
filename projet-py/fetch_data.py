@@ -1,4 +1,4 @@
-import json
+import json  # noqa: D100
 from pathlib import Path
 
 import httpx
@@ -26,8 +26,8 @@ items = get_paginated_items()
 
 # Save the data to a JSON file if items exist
 if items:
-    output_dir = Path(f"outputs/{category}")
-    output_dir.mkdir(parents=True, exist_ok=True)
-    output_file = output_dir / f"{category}_{category_id}.json"
+    output_dir = Path(f"Database/{category}")
+    # output_dir.mkdir(parents=True, exist_ok=True)
+    output_file = output_dir / f"{category_id}.json"
     with output_file.open("w", encoding="utf-8") as file:
         json.dump(items, file, ensure_ascii=False, indent=4)

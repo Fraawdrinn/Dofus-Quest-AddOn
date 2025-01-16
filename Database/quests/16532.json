@@ -19,20 +19,20 @@
         "id": "574441",
         "en": "Doomin and Dragons",
         "pt": "Chaves e dragões",
-        "fr": "Plongeon et dragon",
         "es": "Dragones y chapuzonas",
+        "fr": "Plongeon et dragon",
         "de": "Sturzflug und Drachen"
     },
     "m_id": 1653,
     "slug": {
         "en": "doomin and dragons",
         "pt": "chaves e dragoes",
-        "fr": "plongeon et dragon",
         "es": "dragones y chapuzonas",
+        "fr": "plongeon et dragon",
         "de": "sturzflug und drachen"
     },
     "createdAt": "2024-12-03T00:35:22.871Z",
-    "updatedAt": "2025-01-07T22:51:11.682Z",
+    "updatedAt": "2025-01-14T09:47:52.353Z",
     "steps": [
         {
             "_id": "674e524a64788cc741436570",
@@ -69,21 +69,21 @@
                 "id": "574481",
                 "en": "Doomin and Dragons",
                 "pt": "Chaves e dragões",
-                "fr": "Plongeon et dragon",
                 "es": "Dragones y chapuzonas",
+                "fr": "Plongeon et dragon",
                 "de": "Sturzflug und Drachen"
             },
             "description": {
                 "id": "574482",
                 "en": "According to Meriana, Aguabrial is looking for a new guardian for the Turquoise Dofus. Now's the time for action! First thing to do: get your hands on the keys held by the Soft Oak and the Dragon Pig in order to land an interview with the Dragon. Child's play...",
                 "pt": "Segundo Meriana, Aguabrial está procurando um novo guardião para o Dofus Turquesa. Está na hora de se manifestar! A primeira coisa a fazer é recuperar as chaves guardadas pelo Carvalho Mole e pelo Dragão-Porco para conseguir uma entrevista com o dragão. Moleza...",
-                "fr": "D'après Mériana, Aguabrial cherche un nouveau gardien pour le Dofus Turquoise. C'est le moment de vous manifester ! Première chose à faire : récupérer les clefs détenues par le Chêne Mou et le Dragon Cochon afin de décrocher une entrevue avec le Dragon. Un jeu d'enfant...",
                 "es": "Según Meriana, Aguabrial busca un nuevo guardián para el dofus Turquesa. ¡Es hora de que te manifiestes! Lo primero que debes haces es recuperar las llaves que tienen Roble Blando y Dragocerdo para conseguir una entrevista con el dragón. ¡Es pan comido!",
+                "fr": "D'après Mériana, Aguabrial cherche un nouveau gardien pour le Dofus Turquoise. C'est le moment de vous manifester ! Première chose à faire : récupérer les clefs détenues par le Chêne Mou et le Dragon Cochon afin de décrocher une entrevue avec le Dragon. Un jeu d'enfant...",
                 "de": "Meriana zufolge sucht Aguabrial nach einem neuen Wächter für den Türkis-Dofus. Jetzt ist die Zeit zu handeln! Als Erstes: Schnappt euch die Schlüssel von Weich-Eich und dem Schweinedrachen, um mit dem Drachen sprechen zu können. Ein Kinderspiel ..."
             },
             "m_id": 2273,
             "createdAt": "2024-12-03T00:35:22.673Z",
-            "updatedAt": "2025-01-07T22:51:09.783Z",
+            "updatedAt": "2025-01-14T09:47:51.735Z",
             "rewards": [
                 {
                     "_id": "674e524a64788cc741435957",
@@ -134,50 +134,50 @@
                             "isColorable": false,
                             "recipeSlots": 0,
                             "recipeIds": [
-                                14502,
-                                8273,
-                                29049,
-                                1669,
-                                8099,
-                                24268,
-                                2808,
-                                8928,
-                                12372,
-                                912,
-                                29053,
-                                6511,
-                                27134,
-                                14666,
-                                29054,
-                                8163,
-                                28446,
-                                3650,
-                                29050,
-                                8271,
-                                27135,
-                                29051,
-                                14580,
-                                27133,
-                                8293,
-                                27136,
-                                29055,
-                                12370,
                                 8417,
-                                29048,
-                                24191,
-                                14582,
-                                8281,
-                                233,
-                                12853,
+                                8271,
+                                12372,
+                                14580,
                                 24267,
-                                14277,
-                                24310,
-                                12373,
-                                8285,
-                                29052,
-                                7252,
+                                14582,
+                                3650,
                                 12087,
-                                24281
+                                24191,
+                                8281,
+                                12853,
+                                14666,
+                                8293,
+                                6511,
+                                12370,
+                                8099,
+                                14502,
+                                29054,
+                                29048,
+                                8285,
+                                2808,
+                                29050,
+                                29053,
+                                24310,
+                                29052,
+                                8273,
+                                8928,
+                                29049,
+                                24281,
+                                29051,
+                                28446,
+                                1669,
+                                14277,
+                                912,
+                                24268,
+                                233,
+                                12373,
+                                7252,
+                                27133,
+                                8163,
+                                29055,
+                                27136,
+                                27135,
+                                27134
                             ],
                             "dropMonsterIds": [
                                 113
@@ -204,16 +204,16 @@
                                 "id": "35281",
                                 "en": "Dragon Pig Snout",
                                 "pt": "Focinho de Dragão-Porco",
-                                "fr": "Groin de Dragon Cochon",
                                 "es": "Hocico de Dragocerdo",
+                                "fr": "Groin de Dragon Cochon",
                                 "de": "Schweinedrachen-Rüssel"
                             },
                             "description": {
                                 "id": "195010",
                                 "en": "The Dragon Pig didn't smell that one coming. Hahaha.",
                                 "pt": "Por suposição, o Dragão-Porco foi surpreendido pelo golpe. Pobre Dragão-Porco!",
-                                "fr": "À vue de Groin, le Dragon Cochon n'a pas senti le coup venir. C'est dommage pour lui.",
                                 "es": "Pues parece que Dragocerdo no ha visto llegar el golpe con suficiente antelación... Una pena para él.",
+                                "fr": "À vue de Groin, le Dragon Cochon n'a pas senti le coup venir. C'est dommage pour lui.",
                                 "de": "Angesichts dieses Rüssels ist klar, warum der Schweinedrachen euren Schlag gar nicht kommen sah. Tja, Pech für ihn!"
                             },
                             "importantNotice": {
@@ -287,13 +287,13 @@
                             "slug": {
                                 "en": "dragon pig snout",
                                 "pt": "focinho de dragao-porco",
-                                "fr": "groin de dragon cochon",
                                 "es": "hocico de dragocerdo",
+                                "fr": "groin de dragon cochon",
                                 "de": "schweinedrachen-russel"
                             },
                             "effects": [],
                             "createdAt": "2024-12-03T00:35:12.820Z",
-                            "updatedAt": "2025-01-07T22:50:09.774Z",
+                            "updatedAt": "2025-01-14T09:46:54.140Z",
                             "img": "https://api.dofusdb.fr/img/items/15620.png"
                         },
                         {
@@ -313,33 +313,33 @@
                             "isColorable": false,
                             "recipeSlots": 0,
                             "recipeIds": [
-                                8471,
-                                8474,
+                                13851,
+                                18675,
                                 8473,
+                                8472,
+                                8470,
+                                8925,
+                                17098,
+                                7515,
+                                8469,
+                                18696,
+                                14519,
+                                8265,
+                                7164,
+                                24482,
+                                8471,
                                 6495,
                                 6983,
                                 24197,
-                                7164,
-                                8925,
-                                8470,
-                                17098,
                                 8262,
-                                8472,
-                                7515,
-                                8469,
-                                18675,
-                                18696,
-                                7003,
                                 24349,
-                                13850,
-                                14684,
-                                8265,
-                                24229,
-                                14519,
-                                24482,
+                                13135,
                                 20001,
-                                13851,
-                                13135
+                                8474,
+                                24229,
+                                14684,
+                                13850,
+                                7003
                             ],
                             "dropMonsterIds": [
                                 257
@@ -366,24 +366,24 @@
                                 "id": "36179",
                                 "en": "Soft Oak Amber",
                                 "pt": "Âmbar do Carvalho Mole",
-                                "fr": "Ambre du Chêne Mou",
                                 "es": "Ámbar de Roble Blando",
+                                "fr": "Ambre du Chêne Mou",
                                 "de": "Bernstein von Weich-Eich"
                             },
                             "description": {
                                 "id": "1103949",
                                 "en": "This amber contains one of the Soft Oak's leaves, trapped for aeons in the sticky sap. This precious treasure is truly a collector's item, just like LeChouque's yellow and red polkadot socks.",
                                 "pt": "Este âmbar contém uma pobre criatura presa na resina. Esta joia do Carvalho Mole é uma peça de colecionador, assim como as meias vermelhas e amarelas de bolinha do Tchuke.",
-                                "fr": "Cet Ambre contient une misérable bestiole prise dans la résine. Ce bijou du Chêne Mou est une pièce de collection, au même titre que les chaussettes rouges et jaunes à petits pois du Chouque.",
                                 "es": "Este ámbar contiene dos hojitas de roble en perfecto estado de conservación gracias a la resina. Esta joya del Roble Blando es una pieza de colección, al igual que las calzas rojas y amarillas de Le Chuko.",
+                                "fr": "Cet Ambre contient une misérable bestiole prise dans la résine. Ce bijou du Chêne Mou est une pièce de collection, au même titre que les chaussettes rouges et jaunes à petits pois du Chouque.",
                                 "de": "In diesem Bernstein ist ein armes Tierchen im Harz eingeschlossen. Dieses Schmuckstück von Weich-Eich ist ein echtes Sammlerstück. Es ist ungefähr so begehrt wie die rot-gelb-gepunkteten Socken von Le Tschuck."
                             },
                             "importantNotice": {
                                 "id": "1103950",
                                 "en": "",
                                 "pt": "",
-                                "fr": "",
                                 "es": "",
+                                "fr": "",
                                 "de": ""
                             },
                             "castInLine": false,
@@ -443,13 +443,13 @@
                             "slug": {
                                 "en": "soft oak amber",
                                 "pt": "ambar do carvalho mole",
-                                "fr": "ambre du chene mou",
                                 "es": "ambar de roble blando",
+                                "fr": "ambre du chene mou",
                                 "de": "bernstein von weich-eich"
                             },
                             "effects": [],
                             "createdAt": "2024-12-03T00:35:12.820Z",
-                            "updatedAt": "2025-01-07T22:50:09.811Z",
+                            "updatedAt": "2025-01-14T09:46:54.182Z",
                             "img": "https://api.dofusdb.fr/img/items/50669.png"
                         }
                     ]
@@ -494,13 +494,13 @@
                             "id": "114534",
                             "en": "Defeat #2 #1 in a single fight",
                             "pt": "Derrote #2x \"#1\" em um único combate",
-                            "fr": "Vaincre x#2 #1 en un seul combat",
                             "es": "Vence a #2 x #1 en un solo combate",
+                            "fr": "Vaincre x#2 #1 en un seul combat",
                             "de": "In einem Kampf besiegen: #1 x#2"
                         },
                         "m_id": 6,
                         "createdAt": "2024-12-03T00:35:21.823Z",
-                        "updatedAt": "2025-01-07T22:51:09.161Z"
+                        "updatedAt": "2025-01-14T09:47:51.278Z"
                     },
                     "map": {
                         "_id": "674e524464788cc74141dd9d",
@@ -524,8 +524,8 @@
                             "id": "3539",
                             "en": "Dragon Pig's Den - Thirteenth Room",
                             "pt": "Antro do Dragão-Porco - Décima terceira sala",
-                            "fr": "Antre du Dragon Cochon - Treizième salle",
                             "es": "Antro del Dragocerdo - Sala 13",
+                            "fr": "Antre du Dragon Cochon - Treizième salle",
                             "de": "Unterschlupf des Schweinedrachens - 12. Raum"
                         },
                         "capabilityAllowChallenge": true,
@@ -559,7 +559,7 @@
                         "hasPublicPaddock": false,
                         "m_id": 72361984,
                         "createdAt": "2024-12-03T00:35:16.117Z",
-                        "updatedAt": "2025-01-07T22:50:19.349Z",
+                        "updatedAt": "2025-01-14T09:47:01.904Z",
                         "img": {
                             "1": "https://api.dofusdb.fr/img/maps/1/72361984.jpg",
                             "0.25": "https://api.dofusdb.fr/img/maps/0.25/72361984.jpg",
@@ -820,52 +820,7 @@
                             ],
                             "drops": [
                                 {
-                                    "dropId": 1286,
-                                    "monsterId": 113,
-                                    "objectId": 16241,
-                                    "percentDropForGrade1": 100,
-                                    "percentDropForGrade2": 100,
-                                    "percentDropForGrade3": 100,
-                                    "percentDropForGrade4": 100,
-                                    "percentDropForGrade5": 100,
-                                    "count": 63,
-                                    "criteria": "Sc=3000&Mt=1&PO!30364",
-                                    "hasCriteria": true,
-                                    "hiddenIfInvalidCriteria": false,
-                                    "specificDropCoefficient": []
-                                },
-                                {
-                                    "dropId": 1296,
-                                    "monsterId": 113,
-                                    "objectId": 12232,
-                                    "percentDropForGrade1": 100,
-                                    "percentDropForGrade2": 100,
-                                    "percentDropForGrade3": 100,
-                                    "percentDropForGrade4": 100,
-                                    "percentDropForGrade5": 100,
-                                    "count": 63,
-                                    "criteria": "Sc=982&Qa=713&PL>69&PO!12230&PO!12231&PO!12232&PO!12233&PO!12234&Mt=1",
-                                    "hasCriteria": true,
-                                    "hiddenIfInvalidCriteria": false,
-                                    "specificDropCoefficient": []
-                                },
-                                {
-                                    "dropId": 1476,
-                                    "monsterId": 113,
-                                    "objectId": 10918,
-                                    "percentDropForGrade1": 100,
-                                    "percentDropForGrade2": 100,
-                                    "percentDropForGrade3": 100,
-                                    "percentDropForGrade4": 100,
-                                    "percentDropForGrade5": 100,
-                                    "count": 63,
-                                    "criteria": "Sc=996&(Qa=506|Qa=887)&PO!10917&PO!10918&PO!10919&((POX8334&POE8333)|(POE8334&POX8333))&Mt=1",
-                                    "hasCriteria": true,
-                                    "hiddenIfInvalidCriteria": false,
-                                    "specificDropCoefficient": []
-                                },
-                                {
-                                    "dropId": 2091,
+                                    "dropId": 75,
                                     "monsterId": 113,
                                     "objectId": 30214,
                                     "percentDropForGrade1": 100,
@@ -880,22 +835,37 @@
                                     "specificDropCoefficient": []
                                 },
                                 {
-                                    "dropId": 2620,
+                                    "dropId": 162,
                                     "monsterId": 113,
-                                    "objectId": 10917,
+                                    "objectId": 16241,
                                     "percentDropForGrade1": 100,
                                     "percentDropForGrade2": 100,
                                     "percentDropForGrade3": 100,
                                     "percentDropForGrade4": 100,
                                     "percentDropForGrade5": 100,
                                     "count": 63,
-                                    "criteria": "Sc=996&(Qa=506|Qa=887)&PO!10917&PO!10918&PO!10919&POX8334&POX8333&Mt=1",
+                                    "criteria": "Sc=3000&Mt=1&PO!30364",
                                     "hasCriteria": true,
                                     "hiddenIfInvalidCriteria": false,
                                     "specificDropCoefficient": []
                                 },
                                 {
-                                    "dropId": 3322,
+                                    "dropId": 436,
+                                    "monsterId": 113,
+                                    "objectId": 10918,
+                                    "percentDropForGrade1": 100,
+                                    "percentDropForGrade2": 100,
+                                    "percentDropForGrade3": 100,
+                                    "percentDropForGrade4": 100,
+                                    "percentDropForGrade5": 100,
+                                    "count": 63,
+                                    "criteria": "Sc=996&(Qa=506|Qa=887)&PO!10917&PO!10918&PO!10919&((POX8334&POE8333)|(POE8334&POX8333))&Mt=1",
+                                    "hasCriteria": true,
+                                    "hiddenIfInvalidCriteria": false,
+                                    "specificDropCoefficient": []
+                                },
+                                {
+                                    "dropId": 1638,
                                     "monsterId": 113,
                                     "objectId": 10919,
                                     "percentDropForGrade1": 100,
@@ -910,7 +880,37 @@
                                     "specificDropCoefficient": []
                                 },
                                 {
-                                    "dropId": 5182,
+                                    "dropId": 1788,
+                                    "monsterId": 113,
+                                    "objectId": 12232,
+                                    "percentDropForGrade1": 100,
+                                    "percentDropForGrade2": 100,
+                                    "percentDropForGrade3": 100,
+                                    "percentDropForGrade4": 100,
+                                    "percentDropForGrade5": 100,
+                                    "count": 63,
+                                    "criteria": "Sc=982&Qa=713&PL>69&PO!12230&PO!12231&PO!12232&PO!12233&PO!12234&Mt=1",
+                                    "hasCriteria": true,
+                                    "hiddenIfInvalidCriteria": false,
+                                    "specificDropCoefficient": []
+                                },
+                                {
+                                    "dropId": 2423,
+                                    "monsterId": 113,
+                                    "objectId": 10917,
+                                    "percentDropForGrade1": 100,
+                                    "percentDropForGrade2": 100,
+                                    "percentDropForGrade3": 100,
+                                    "percentDropForGrade4": 100,
+                                    "percentDropForGrade5": 100,
+                                    "count": 63,
+                                    "criteria": "Sc=996&(Qa=506|Qa=887)&PO!10917&PO!10918&PO!10919&POX8334&POX8333&Mt=1",
+                                    "hasCriteria": true,
+                                    "hiddenIfInvalidCriteria": false,
+                                    "specificDropCoefficient": []
+                                },
+                                {
+                                    "dropId": 5157,
                                     "monsterId": 113,
                                     "objectId": 2645,
                                     "percentDropForGrade1": 36,
@@ -956,9 +956,9 @@
                                     ]
                                 },
                                 {
-                                    "dropId": 7895,
+                                    "dropId": 7956,
                                     "monsterId": 113,
-                                    "objectId": 8393,
+                                    "objectId": 479,
                                     "percentDropForGrade1": 6,
                                     "percentDropForGrade2": 6,
                                     "percentDropForGrade3": 6,
@@ -968,41 +968,10 @@
                                     "criteria": "",
                                     "hasCriteria": false,
                                     "hiddenIfInvalidCriteria": false,
-                                    "specificDropCoefficient": [
-                                        {
-                                            "monsterId": 113,
-                                            "monsterGrade": 2,
-                                            "dropCoefficient": 0.20000000298023224,
-                                            "criteria": "ST=2"
-                                        },
-                                        {
-                                            "monsterId": 113,
-                                            "monsterGrade": 3,
-                                            "dropCoefficient": 0.20000000298023224,
-                                            "criteria": "ST=2"
-                                        },
-                                        {
-                                            "monsterId": 113,
-                                            "monsterGrade": 4,
-                                            "dropCoefficient": 0.20000000298023224,
-                                            "criteria": "ST=2"
-                                        },
-                                        {
-                                            "monsterId": 113,
-                                            "monsterGrade": 5,
-                                            "dropCoefficient": 0.20000000298023224,
-                                            "criteria": "ST=2"
-                                        },
-                                        {
-                                            "monsterId": 113,
-                                            "monsterGrade": 1,
-                                            "dropCoefficient": 0.20000000298023224,
-                                            "criteria": "ST=2"
-                                        }
-                                    ]
+                                    "specificDropCoefficient": []
                                 },
                                 {
-                                    "dropId": 7913,
+                                    "dropId": 8023,
                                     "monsterId": 113,
                                     "objectId": 13526,
                                     "percentDropForGrade1": 6,
@@ -1048,9 +1017,9 @@
                                     ]
                                 },
                                 {
-                                    "dropId": 8039,
+                                    "dropId": 8049,
                                     "monsterId": 113,
-                                    "objectId": 479,
+                                    "objectId": 8393,
                                     "percentDropForGrade1": 6,
                                     "percentDropForGrade2": 6,
                                     "percentDropForGrade3": 6,
@@ -1060,25 +1029,41 @@
                                     "criteria": "",
                                     "hasCriteria": false,
                                     "hiddenIfInvalidCriteria": false,
-                                    "specificDropCoefficient": []
+                                    "specificDropCoefficient": [
+                                        {
+                                            "monsterId": 113,
+                                            "monsterGrade": 2,
+                                            "dropCoefficient": 0.20000000298023224,
+                                            "criteria": "ST=2"
+                                        },
+                                        {
+                                            "monsterId": 113,
+                                            "monsterGrade": 3,
+                                            "dropCoefficient": 0.20000000298023224,
+                                            "criteria": "ST=2"
+                                        },
+                                        {
+                                            "monsterId": 113,
+                                            "monsterGrade": 4,
+                                            "dropCoefficient": 0.20000000298023224,
+                                            "criteria": "ST=2"
+                                        },
+                                        {
+                                            "monsterId": 113,
+                                            "monsterGrade": 5,
+                                            "dropCoefficient": 0.20000000298023224,
+                                            "criteria": "ST=2"
+                                        },
+                                        {
+                                            "monsterId": 113,
+                                            "monsterGrade": 1,
+                                            "dropCoefficient": 0.20000000298023224,
+                                            "criteria": "ST=2"
+                                        }
+                                    ]
                                 },
                                 {
-                                    "dropId": 8917,
-                                    "monsterId": 113,
-                                    "objectId": 20796,
-                                    "percentDropForGrade1": 3,
-                                    "percentDropForGrade2": 3,
-                                    "percentDropForGrade3": 3,
-                                    "percentDropForGrade4": 3,
-                                    "percentDropForGrade5": 3,
-                                    "count": 63,
-                                    "criteria": "Sv=946,1",
-                                    "hasCriteria": true,
-                                    "hiddenIfInvalidCriteria": false,
-                                    "specificDropCoefficient": []
-                                },
-                                {
-                                    "dropId": 8929,
+                                    "dropId": 8789,
                                     "monsterId": 113,
                                     "objectId": 16830,
                                     "percentDropForGrade1": 3,
@@ -1093,7 +1078,22 @@
                                     "specificDropCoefficient": []
                                 },
                                 {
-                                    "dropId": 9854,
+                                    "dropId": 8868,
+                                    "monsterId": 113,
+                                    "objectId": 20796,
+                                    "percentDropForGrade1": 3,
+                                    "percentDropForGrade2": 3,
+                                    "percentDropForGrade3": 3,
+                                    "percentDropForGrade4": 3,
+                                    "percentDropForGrade5": 3,
+                                    "count": 63,
+                                    "criteria": "Sv=946,1",
+                                    "hasCriteria": true,
+                                    "hiddenIfInvalidCriteria": false,
+                                    "specificDropCoefficient": []
+                                },
+                                {
+                                    "dropId": 9850,
                                     "monsterId": 113,
                                     "objectId": 17141,
                                     "percentDropForGrade1": 1.809999942779541,
@@ -1108,7 +1108,7 @@
                                     "specificDropCoefficient": []
                                 },
                                 {
-                                    "dropId": 11787,
+                                    "dropId": 11788,
                                     "monsterId": 113,
                                     "objectId": 20136,
                                     "percentDropForGrade1": 0.3499999940395355,
@@ -1123,7 +1123,7 @@
                                     "specificDropCoefficient": []
                                 },
                                 {
-                                    "dropId": 12032,
+                                    "dropId": 12055,
                                     "monsterId": 113,
                                     "objectId": 20793,
                                     "percentDropForGrade1": 0.05000000074505806,
@@ -1138,7 +1138,22 @@
                                     "specificDropCoefficient": []
                                 },
                                 {
-                                    "dropId": 12346,
+                                    "dropId": 12344,
+                                    "monsterId": 113,
+                                    "objectId": 21147,
+                                    "percentDropForGrade1": 0.0017500000540167093,
+                                    "percentDropForGrade2": 0.0017500000540167093,
+                                    "percentDropForGrade3": 0.0017500000540167093,
+                                    "percentDropForGrade4": 0.0017500000540167093,
+                                    "percentDropForGrade5": 0.0017500000540167093,
+                                    "count": 63,
+                                    "criteria": "Ms=0&Mt=1",
+                                    "hasCriteria": true,
+                                    "hiddenIfInvalidCriteria": false,
+                                    "specificDropCoefficient": []
+                                },
+                                {
+                                    "dropId": 12356,
                                     "monsterId": 113,
                                     "objectId": 21148,
                                     "percentDropForGrade1": 0.0017500000540167093,
@@ -1153,24 +1168,9 @@
                                     "specificDropCoefficient": []
                                 },
                                 {
-                                    "dropId": 12352,
+                                    "dropId": 12358,
                                     "monsterId": 113,
                                     "objectId": 20052,
-                                    "percentDropForGrade1": 0.0017500000540167093,
-                                    "percentDropForGrade2": 0.0017500000540167093,
-                                    "percentDropForGrade3": 0.0017500000540167093,
-                                    "percentDropForGrade4": 0.0017500000540167093,
-                                    "percentDropForGrade5": 0.0017500000540167093,
-                                    "count": 63,
-                                    "criteria": "Ms=0&Mt=1",
-                                    "hasCriteria": true,
-                                    "hiddenIfInvalidCriteria": false,
-                                    "specificDropCoefficient": []
-                                },
-                                {
-                                    "dropId": 12353,
-                                    "monsterId": 113,
-                                    "objectId": 21147,
                                     "percentDropForGrade1": 0.0017500000540167093,
                                     "percentDropForGrade2": 0.0017500000540167093,
                                     "percentDropForGrade3": 0.0017500000540167093,
@@ -1266,8 +1266,8 @@
                                 "id": "6163",
                                 "en": "Dragon Pig",
                                 "pt": "Dragão-Porco",
-                                "fr": "Dragon Cochon",
                                 "es": "Dragocerdo",
+                                "fr": "Dragon Cochon",
                                 "de": "Schweinedrachen"
                             },
                             "useSummonSlot": true,
@@ -1290,8 +1290,8 @@
                             "slug": {
                                 "en": "dragon pig",
                                 "pt": "dragao-porco",
-                                "fr": "dragon cochon",
                                 "es": "dragocerdo",
+                                "fr": "dragon cochon",
                                 "de": "schweinedrachen"
                             },
                             "tags": [
@@ -1302,7 +1302,7 @@
                                 "retPM"
                             ],
                             "createdAt": "2024-12-03T00:35:17.778Z",
-                            "updatedAt": "2025-01-07T22:50:21.855Z",
+                            "updatedAt": "2025-01-14T09:47:04.453Z",
                             "img": "https://api.dofusdb.fr/img/monsters/60.png",
                             "type": "monsters"
                         },
@@ -1347,13 +1347,13 @@
                             "id": "56293",
                             "en": "Find the map: #1",
                             "pt": "Descubra o mapa: #1",
-                            "fr": "Découvrir la carte : #1",
                             "es": "Descubre el mapa: #1",
+                            "fr": "Découvrir la carte : #1",
                             "de": "Die Karte \"#1\" entdecken"
                         },
                         "m_id": 4,
                         "createdAt": "2024-12-03T00:35:21.823Z",
-                        "updatedAt": "2025-01-07T22:51:09.161Z"
+                        "updatedAt": "2025-01-14T09:47:51.278Z"
                     },
                     "map": {
                         "_id": "674e524464788cc74141dd9f",
@@ -1377,8 +1377,8 @@
                             "id": "3538",
                             "en": "Dragon Pig's Den - Exit",
                             "pt": "Antro do Dragão-Porco - Saída",
-                            "fr": "Antre du Dragon Cochon - Sortie",
                             "es": "Antro del Dragocerdo - Salida",
+                            "fr": "Antre du Dragon Cochon - Sortie",
                             "de": "Unterschlupf des Schweinedrachens - Ausgang"
                         },
                         "capabilityAllowChallenge": true,
@@ -1412,7 +1412,7 @@
                         "hasPublicPaddock": false,
                         "m_id": 72363008,
                         "createdAt": "2024-12-03T00:35:16.117Z",
-                        "updatedAt": "2025-01-07T22:50:19.349Z",
+                        "updatedAt": "2025-01-14T09:47:01.904Z",
                         "img": {
                             "1": "https://api.dofusdb.fr/img/maps/1/72363008.jpg",
                             "0.25": "https://api.dofusdb.fr/img/maps/0.25/72363008.jpg",
@@ -1463,13 +1463,13 @@
                             "id": "56295",
                             "en": "#1",
                             "pt": "#1",
-                            "fr": "#1",
                             "es": "#1",
+                            "fr": "#1",
                             "de": "#1"
                         },
                         "m_id": 0,
                         "createdAt": "2024-12-03T00:35:21.823Z",
-                        "updatedAt": "2025-01-07T22:51:09.161Z"
+                        "updatedAt": "2025-01-14T09:47:51.278Z"
                     },
                     "map": {
                         "_id": "674e524464788cc74141dd9f",
@@ -1493,8 +1493,8 @@
                             "id": "3538",
                             "en": "Dragon Pig's Den - Exit",
                             "pt": "Antro do Dragão-Porco - Saída",
-                            "fr": "Antre du Dragon Cochon - Sortie",
                             "es": "Antro del Dragocerdo - Salida",
+                            "fr": "Antre du Dragon Cochon - Sortie",
                             "de": "Unterschlupf des Schweinedrachens - Ausgang"
                         },
                         "capabilityAllowChallenge": true,
@@ -1528,7 +1528,7 @@
                         "hasPublicPaddock": false,
                         "m_id": 72363008,
                         "createdAt": "2024-12-03T00:35:16.117Z",
-                        "updatedAt": "2025-01-07T22:50:19.349Z",
+                        "updatedAt": "2025-01-14T09:47:01.904Z",
                         "img": {
                             "1": "https://api.dofusdb.fr/img/maps/1/72363008.jpg",
                             "0.25": "https://api.dofusdb.fr/img/maps/0.25/72363008.jpg",
@@ -1576,13 +1576,13 @@
                             "id": "114534",
                             "en": "Defeat #2 #1 in a single fight",
                             "pt": "Derrote #2x \"#1\" em um único combate",
-                            "fr": "Vaincre x#2 #1 en un seul combat",
                             "es": "Vence a #2 x #1 en un solo combate",
+                            "fr": "Vaincre x#2 #1 en un seul combat",
                             "de": "In einem Kampf besiegen: #1 x#2"
                         },
                         "m_id": 6,
                         "createdAt": "2024-12-03T00:35:21.823Z",
-                        "updatedAt": "2025-01-07T22:51:09.161Z"
+                        "updatedAt": "2025-01-14T09:47:51.278Z"
                     },
                     "map": {
                         "_id": "674e524464788cc74141ef26",
@@ -1606,8 +1606,8 @@
                             "id": "510661",
                             "en": "Soft Oak Clearing - Fifth Room",
                             "pt": "Clareira do Carvalho Mole - Quinta sala",
-                            "fr": "Clairière du Chêne Mou - Cinquième salle",
                             "es": "Claro del Roble Blando - Sala 5",
+                            "fr": "Clairière du Chêne Mou - Cinquième salle",
                             "de": "Weich-Eich-Dungeon  - 5. Raum"
                         },
                         "capabilityAllowChallenge": true,
@@ -1641,7 +1641,7 @@
                         "hasPublicPaddock": false,
                         "m_id": 149427200,
                         "createdAt": "2024-12-03T00:35:16.117Z",
-                        "updatedAt": "2025-01-07T22:50:19.532Z",
+                        "updatedAt": "2025-01-14T09:47:02.057Z",
                         "img": {
                             "1": "https://api.dofusdb.fr/img/maps/1/149427200.jpg",
                             "0.25": "https://api.dofusdb.fr/img/maps/0.25/149427200.jpg",
@@ -1902,52 +1902,7 @@
                             ],
                             "drops": [
                                 {
-                                    "dropId": 333,
-                                    "monsterId": 257,
-                                    "objectId": 12233,
-                                    "percentDropForGrade1": 100,
-                                    "percentDropForGrade2": 100,
-                                    "percentDropForGrade3": 100,
-                                    "percentDropForGrade4": 100,
-                                    "percentDropForGrade5": 100,
-                                    "count": 63,
-                                    "criteria": "Sc=982&Qa=713&PL>109&PO!12230&PO!12231&PO!12232&PO!12233&PO!12234&Mt=1",
-                                    "hasCriteria": true,
-                                    "hiddenIfInvalidCriteria": false,
-                                    "specificDropCoefficient": []
-                                },
-                                {
-                                    "dropId": 418,
-                                    "monsterId": 257,
-                                    "objectId": 10917,
-                                    "percentDropForGrade1": 100,
-                                    "percentDropForGrade2": 100,
-                                    "percentDropForGrade3": 100,
-                                    "percentDropForGrade4": 100,
-                                    "percentDropForGrade5": 100,
-                                    "count": 63,
-                                    "criteria": "Sc=996&(Qa=521|Qa=888)&PO!10917&PO!10918&PO!10919&POX8334&POX8333&Mt=1",
-                                    "hasCriteria": true,
-                                    "hiddenIfInvalidCriteria": false,
-                                    "specificDropCoefficient": []
-                                },
-                                {
-                                    "dropId": 1038,
-                                    "monsterId": 257,
-                                    "objectId": 30213,
-                                    "percentDropForGrade1": 100,
-                                    "percentDropForGrade2": 100,
-                                    "percentDropForGrade3": 100,
-                                    "percentDropForGrade4": 100,
-                                    "percentDropForGrade5": 100,
-                                    "count": 63,
-                                    "criteria": "Sc=3052&Mt=1&PO!30416",
-                                    "hasCriteria": true,
-                                    "hiddenIfInvalidCriteria": false,
-                                    "specificDropCoefficient": []
-                                },
-                                {
-                                    "dropId": 1340,
+                                    "dropId": 233,
                                     "monsterId": 257,
                                     "objectId": 10918,
                                     "percentDropForGrade1": 100,
@@ -1962,52 +1917,7 @@
                                     "specificDropCoefficient": []
                                 },
                                 {
-                                    "dropId": 1719,
-                                    "monsterId": 257,
-                                    "objectId": 21171,
-                                    "percentDropForGrade1": 100,
-                                    "percentDropForGrade2": 100,
-                                    "percentDropForGrade3": 100,
-                                    "percentDropForGrade4": 100,
-                                    "percentDropForGrade5": 100,
-                                    "count": 63,
-                                    "criteria": "PL>129&PL<151&DD<30,21172&Sc=944",
-                                    "hasCriteria": true,
-                                    "hiddenIfInvalidCriteria": false,
-                                    "specificDropCoefficient": []
-                                },
-                                {
-                                    "dropId": 2211,
-                                    "monsterId": 257,
-                                    "objectId": 10919,
-                                    "percentDropForGrade1": 100,
-                                    "percentDropForGrade2": 100,
-                                    "percentDropForGrade3": 100,
-                                    "percentDropForGrade4": 100,
-                                    "percentDropForGrade5": 100,
-                                    "count": 63,
-                                    "criteria": "Sc=996&(Qa=521|Qa=888)&PO!10917&PO!10918&PO!10919&POE8334&POE8333&Mt=1",
-                                    "hasCriteria": true,
-                                    "hiddenIfInvalidCriteria": false,
-                                    "specificDropCoefficient": []
-                                },
-                                {
-                                    "dropId": 2554,
-                                    "monsterId": 257,
-                                    "objectId": 11683,
-                                    "percentDropForGrade1": 100,
-                                    "percentDropForGrade2": 100,
-                                    "percentDropForGrade3": 100,
-                                    "percentDropForGrade4": 100,
-                                    "percentDropForGrade5": 100,
-                                    "count": 63,
-                                    "criteria": "Qs=1237&Qo>4096&Qo<4098&PO!11683&Mt=1",
-                                    "hasCriteria": true,
-                                    "hiddenIfInvalidCriteria": false,
-                                    "specificDropCoefficient": []
-                                },
-                                {
-                                    "dropId": 2718,
+                                    "dropId": 930,
                                     "monsterId": 257,
                                     "objectId": 21618,
                                     "percentDropForGrade1": 100,
@@ -2022,7 +1932,52 @@
                                     "specificDropCoefficient": []
                                 },
                                 {
-                                    "dropId": 3049,
+                                    "dropId": 1324,
+                                    "monsterId": 257,
+                                    "objectId": 11683,
+                                    "percentDropForGrade1": 100,
+                                    "percentDropForGrade2": 100,
+                                    "percentDropForGrade3": 100,
+                                    "percentDropForGrade4": 100,
+                                    "percentDropForGrade5": 100,
+                                    "count": 63,
+                                    "criteria": "Qs=1237&Qo>4096&Qo<4098&PO!11683&Mt=1",
+                                    "hasCriteria": true,
+                                    "hiddenIfInvalidCriteria": false,
+                                    "specificDropCoefficient": []
+                                },
+                                {
+                                    "dropId": 2171,
+                                    "monsterId": 257,
+                                    "objectId": 12233,
+                                    "percentDropForGrade1": 100,
+                                    "percentDropForGrade2": 100,
+                                    "percentDropForGrade3": 100,
+                                    "percentDropForGrade4": 100,
+                                    "percentDropForGrade5": 100,
+                                    "count": 63,
+                                    "criteria": "Sc=982&Qa=713&PL>109&PO!12230&PO!12231&PO!12232&PO!12233&PO!12234&Mt=1",
+                                    "hasCriteria": true,
+                                    "hiddenIfInvalidCriteria": false,
+                                    "specificDropCoefficient": []
+                                },
+                                {
+                                    "dropId": 2307,
+                                    "monsterId": 257,
+                                    "objectId": 10917,
+                                    "percentDropForGrade1": 100,
+                                    "percentDropForGrade2": 100,
+                                    "percentDropForGrade3": 100,
+                                    "percentDropForGrade4": 100,
+                                    "percentDropForGrade5": 100,
+                                    "count": 63,
+                                    "criteria": "Sc=996&(Qa=521|Qa=888)&PO!10917&PO!10918&PO!10919&POX8334&POX8333&Mt=1",
+                                    "hasCriteria": true,
+                                    "hiddenIfInvalidCriteria": false,
+                                    "specificDropCoefficient": []
+                                },
+                                {
+                                    "dropId": 2388,
                                     "monsterId": 257,
                                     "objectId": 22294,
                                     "percentDropForGrade1": 100,
@@ -2037,7 +1992,52 @@
                                     "specificDropCoefficient": []
                                 },
                                 {
-                                    "dropId": 5635,
+                                    "dropId": 2901,
+                                    "monsterId": 257,
+                                    "objectId": 10919,
+                                    "percentDropForGrade1": 100,
+                                    "percentDropForGrade2": 100,
+                                    "percentDropForGrade3": 100,
+                                    "percentDropForGrade4": 100,
+                                    "percentDropForGrade5": 100,
+                                    "count": 63,
+                                    "criteria": "Sc=996&(Qa=521|Qa=888)&PO!10917&PO!10918&PO!10919&POE8334&POE8333&Mt=1",
+                                    "hasCriteria": true,
+                                    "hiddenIfInvalidCriteria": false,
+                                    "specificDropCoefficient": []
+                                },
+                                {
+                                    "dropId": 3208,
+                                    "monsterId": 257,
+                                    "objectId": 30213,
+                                    "percentDropForGrade1": 100,
+                                    "percentDropForGrade2": 100,
+                                    "percentDropForGrade3": 100,
+                                    "percentDropForGrade4": 100,
+                                    "percentDropForGrade5": 100,
+                                    "count": 63,
+                                    "criteria": "Sc=3052&Mt=1&PO!30416",
+                                    "hasCriteria": true,
+                                    "hiddenIfInvalidCriteria": false,
+                                    "specificDropCoefficient": []
+                                },
+                                {
+                                    "dropId": 3322,
+                                    "monsterId": 257,
+                                    "objectId": 21171,
+                                    "percentDropForGrade1": 100,
+                                    "percentDropForGrade2": 100,
+                                    "percentDropForGrade3": 100,
+                                    "percentDropForGrade4": 100,
+                                    "percentDropForGrade5": 100,
+                                    "count": 63,
+                                    "criteria": "PL>129&PL<151&DD<30,21172&Sc=944",
+                                    "hasCriteria": true,
+                                    "hiddenIfInvalidCriteria": false,
+                                    "specificDropCoefficient": []
+                                },
+                                {
+                                    "dropId": 5603,
                                     "monsterId": 257,
                                     "objectId": 6488,
                                     "percentDropForGrade1": 27,
@@ -2083,7 +2083,7 @@
                                     ]
                                 },
                                 {
-                                    "dropId": 7950,
+                                    "dropId": 7890,
                                     "monsterId": 257,
                                     "objectId": 13526,
                                     "percentDropForGrade1": 6,
@@ -2190,7 +2190,7 @@
                                     "specificDropCoefficient": []
                                 },
                                 {
-                                    "dropId": 11106,
+                                    "dropId": 10337,
                                     "monsterId": 257,
                                     "objectId": 16835,
                                     "percentDropForGrade1": 1,
@@ -2220,7 +2220,22 @@
                                     "specificDropCoefficient": []
                                 },
                                 {
-                                    "dropId": 12257,
+                                    "dropId": 12254,
+                                    "monsterId": 257,
+                                    "objectId": 21148,
+                                    "percentDropForGrade1": 0.002749999985098839,
+                                    "percentDropForGrade2": 0.002749999985098839,
+                                    "percentDropForGrade3": 0.002749999985098839,
+                                    "percentDropForGrade4": 0.002749999985098839,
+                                    "percentDropForGrade5": 0.002749999985098839,
+                                    "count": 63,
+                                    "criteria": "Ms=0&Mt=1",
+                                    "hasCriteria": true,
+                                    "hiddenIfInvalidCriteria": false,
+                                    "specificDropCoefficient": []
+                                },
+                                {
+                                    "dropId": 12264,
                                     "monsterId": 257,
                                     "objectId": 21147,
                                     "percentDropForGrade1": 0.002749999985098839,
@@ -2235,24 +2250,9 @@
                                     "specificDropCoefficient": []
                                 },
                                 {
-                                    "dropId": 12258,
+                                    "dropId": 12265,
                                     "monsterId": 257,
                                     "objectId": 20052,
-                                    "percentDropForGrade1": 0.002749999985098839,
-                                    "percentDropForGrade2": 0.002749999985098839,
-                                    "percentDropForGrade3": 0.002749999985098839,
-                                    "percentDropForGrade4": 0.002749999985098839,
-                                    "percentDropForGrade5": 0.002749999985098839,
-                                    "count": 63,
-                                    "criteria": "Ms=0&Mt=1",
-                                    "hasCriteria": true,
-                                    "hiddenIfInvalidCriteria": false,
-                                    "specificDropCoefficient": []
-                                },
-                                {
-                                    "dropId": 12260,
-                                    "monsterId": 257,
-                                    "objectId": 21148,
                                     "percentDropForGrade1": 0.002749999985098839,
                                     "percentDropForGrade2": 0.002749999985098839,
                                     "percentDropForGrade3": 0.002749999985098839,
@@ -2347,8 +2347,8 @@
                                 "id": "5541",
                                 "en": "Soft Oak",
                                 "pt": "Carvalho Mole",
-                                "fr": "Chêne Mou",
                                 "es": "Roble Blando",
+                                "fr": "Chêne Mou",
                                 "de": "Weich-Eich"
                             },
                             "useSummonSlot": true,
@@ -2371,8 +2371,8 @@
                             "slug": {
                                 "en": "soft oak",
                                 "pt": "carvalho mole",
-                                "fr": "chene mou",
                                 "es": "roble blando",
+                                "fr": "chene mou",
                                 "de": "weich-eich"
                             },
                             "tags": [
@@ -2388,7 +2388,7 @@
                                 "pull"
                             ],
                             "createdAt": "2024-12-03T00:35:17.778Z",
-                            "updatedAt": "2025-01-07T22:50:21.890Z",
+                            "updatedAt": "2025-01-14T09:47:04.484Z",
                             "img": "https://api.dofusdb.fr/img/monsters/147.png",
                             "type": "monsters"
                         },
@@ -2433,13 +2433,13 @@
                             "id": "56293",
                             "en": "Find the map: #1",
                             "pt": "Descubra o mapa: #1",
-                            "fr": "Découvrir la carte : #1",
                             "es": "Descubre el mapa: #1",
+                            "fr": "Découvrir la carte : #1",
                             "de": "Die Karte \"#1\" entdecken"
                         },
                         "m_id": 4,
                         "createdAt": "2024-12-03T00:35:21.823Z",
-                        "updatedAt": "2025-01-07T22:51:09.161Z"
+                        "updatedAt": "2025-01-14T09:47:51.278Z"
                     },
                     "map": {
                         "_id": "674e524464788cc74141f001",
@@ -2463,8 +2463,8 @@
                             "id": "565455",
                             "en": "Soft Oak Clearing - Disillusioned Thicket",
                             "pt": "Clareira do Carvalho Mole - Bosque desencantado",
-                            "fr": "Clairière du Chêne Mou - Bosquet désenchanté",
                             "es": "Claro del Roble Blando - Bosquecillo desencantado",
+                            "fr": "Clairière du Chêne Mou - Bosquet désenchanté",
                             "de": "Weich-Eich-Lichtung - Entzaubertes Wäldchen"
                         },
                         "capabilityAllowChallenge": false,
@@ -2498,7 +2498,7 @@
                         "hasPublicPaddock": false,
                         "m_id": 154142211,
                         "createdAt": "2024-12-03T00:35:16.117Z",
-                        "updatedAt": "2025-01-07T22:50:19.538Z",
+                        "updatedAt": "2025-01-14T09:47:02.063Z",
                         "img": {
                             "1": "https://api.dofusdb.fr/img/maps/1/154142211.jpg",
                             "0.25": "https://api.dofusdb.fr/img/maps/0.25/154142211.jpg",
@@ -2549,13 +2549,13 @@
                             "id": "56295",
                             "en": "#1",
                             "pt": "#1",
-                            "fr": "#1",
                             "es": "#1",
+                            "fr": "#1",
                             "de": "#1"
                         },
                         "m_id": 0,
                         "createdAt": "2024-12-03T00:35:21.823Z",
-                        "updatedAt": "2025-01-07T22:51:09.161Z"
+                        "updatedAt": "2025-01-14T09:47:51.278Z"
                     },
                     "map": {
                         "_id": "674e524464788cc74141f001",
@@ -2579,8 +2579,8 @@
                             "id": "565455",
                             "en": "Soft Oak Clearing - Disillusioned Thicket",
                             "pt": "Clareira do Carvalho Mole - Bosque desencantado",
-                            "fr": "Clairière du Chêne Mou - Bosquet désenchanté",
                             "es": "Claro del Roble Blando - Bosquecillo desencantado",
+                            "fr": "Clairière du Chêne Mou - Bosquet désenchanté",
                             "de": "Weich-Eich-Lichtung - Entzaubertes Wäldchen"
                         },
                         "capabilityAllowChallenge": false,
@@ -2614,7 +2614,7 @@
                         "hasPublicPaddock": false,
                         "m_id": 154142211,
                         "createdAt": "2024-12-03T00:35:16.117Z",
-                        "updatedAt": "2025-01-07T22:50:19.538Z",
+                        "updatedAt": "2025-01-14T09:47:02.063Z",
                         "img": {
                             "1": "https://api.dofusdb.fr/img/maps/1/154142211.jpg",
                             "0.25": "https://api.dofusdb.fr/img/maps/0.25/154142211.jpg",
@@ -2660,13 +2660,13 @@
                             "id": "56293",
                             "en": "Find the map: #1",
                             "pt": "Descubra o mapa: #1",
-                            "fr": "Découvrir la carte : #1",
                             "es": "Descubre el mapa: #1",
+                            "fr": "Découvrir la carte : #1",
                             "de": "Die Karte \"#1\" entdecken"
                         },
                         "m_id": 4,
                         "createdAt": "2024-12-03T00:35:21.823Z",
-                        "updatedAt": "2025-01-07T22:51:09.161Z"
+                        "updatedAt": "2025-01-14T09:47:51.278Z"
                     },
                     "map": {
                         "_id": "674e524464788cc74141d4bb",
@@ -2690,8 +2690,8 @@
                             "id": "264397",
                             "en": "Imp Village Gate",
                             "pt": "Porta do Vilarejo dos Diabretes",
-                            "fr": "Porte du Village des Brigandins",
                             "es": "Puerta del pueblo de los salteadorillos",
+                            "fr": "Porte du Village des Brigandins",
                             "de": "Tor zum Dorf der Brigandiner"
                         },
                         "capabilityAllowChallenge": true,
@@ -2725,7 +2725,7 @@
                         "hasPublicPaddock": false,
                         "m_id": 14551301,
                         "createdAt": "2024-12-03T00:35:16.117Z",
-                        "updatedAt": "2025-01-07T22:50:19.279Z",
+                        "updatedAt": "2025-01-14T09:47:01.843Z",
                         "img": {
                             "1": "https://api.dofusdb.fr/img/maps/1/14551301.jpg",
                             "0.25": "https://api.dofusdb.fr/img/maps/0.25/14551301.jpg",
@@ -2774,13 +2774,13 @@
                             "id": "395670",
                             "en": "Talk to #1",
                             "pt": "Fale com: #1",
-                            "fr": "Aller voir #1",
                             "es": "Ve a ver a #1",
+                            "fr": "Aller voir #1",
                             "de": "#1 sprechen"
                         },
                         "m_id": 1,
                         "createdAt": "2024-12-03T00:35:21.823Z",
-                        "updatedAt": "2025-01-07T22:51:09.161Z"
+                        "updatedAt": "2025-01-14T09:47:51.278Z"
                     },
                     "map": {
                         "_id": "674e524464788cc74141d4bb",
@@ -2804,8 +2804,8 @@
                             "id": "264397",
                             "en": "Imp Village Gate",
                             "pt": "Porta do Vilarejo dos Diabretes",
-                            "fr": "Porte du Village des Brigandins",
                             "es": "Puerta del pueblo de los salteadorillos",
+                            "fr": "Porte du Village des Brigandins",
                             "de": "Tor zum Dorf der Brigandiner"
                         },
                         "capabilityAllowChallenge": true,
@@ -2839,7 +2839,7 @@
                         "hasPublicPaddock": false,
                         "m_id": 14551301,
                         "createdAt": "2024-12-03T00:35:16.117Z",
-                        "updatedAt": "2025-01-07T22:50:19.279Z",
+                        "updatedAt": "2025-01-14T09:47:01.843Z",
                         "img": {
                             "1": "https://api.dofusdb.fr/img/maps/1/14551301.jpg",
                             "0.25": "https://api.dofusdb.fr/img/maps/0.25/14551301.jpg",
@@ -3113,13 +3113,13 @@
                                 "id": "8384",
                                 "en": "Mama Ayuto",
                                 "pt": "Mama Ayuto",
-                                "fr": "Mama Ayuto",
                                 "es": "Mami Ayuto",
+                                "fr": "Mama Ayuto",
                                 "de": "Mama Ayuto"
                             },
                             "m_id": 389,
                             "createdAt": "2024-12-03T00:35:21.325Z",
-                            "updatedAt": "2025-01-07T22:51:06.987Z",
+                            "updatedAt": "2025-01-14T09:47:49.636Z",
                             "type": "npcs"
                         }
                     ]
@@ -3160,13 +3160,13 @@
                             "id": "56293",
                             "en": "Find the map: #1",
                             "pt": "Descubra o mapa: #1",
-                            "fr": "Découvrir la carte : #1",
                             "es": "Descubre el mapa: #1",
+                            "fr": "Découvrir la carte : #1",
                             "de": "Die Karte \"#1\" entdecken"
                         },
                         "m_id": 4,
                         "createdAt": "2024-12-03T00:35:21.823Z",
-                        "updatedAt": "2025-01-07T22:51:09.161Z"
+                        "updatedAt": "2025-01-14T09:47:51.278Z"
                     },
                     "map": {
                         "_id": "674e524464788cc74141f007",
@@ -3190,8 +3190,8 @@
                             "id": "564500",
                             "en": "Imp Village Platform",
                             "pt": "Plataforma do vilarejo dos Diabretes",
-                            "fr": "Plate-forme du Village des Brigandins",
                             "es": "Plataforma del pueblo de los salteadorillos",
+                            "fr": "Plate-forme du Village des Brigandins",
                             "de": "Dorf der Brigandiner – Plattform"
                         },
                         "capabilityAllowChallenge": true,
@@ -3225,7 +3225,7 @@
                         "hasPublicPaddock": false,
                         "m_id": 154272257,
                         "createdAt": "2024-12-03T00:35:16.117Z",
-                        "updatedAt": "2025-01-07T22:50:19.539Z",
+                        "updatedAt": "2025-01-14T09:47:02.064Z",
                         "img": {
                             "1": "https://api.dofusdb.fr/img/maps/1/154272257.jpg",
                             "0.25": "https://api.dofusdb.fr/img/maps/0.25/154272257.jpg",
@@ -3274,13 +3274,13 @@
                             "id": "395670",
                             "en": "Talk to #1",
                             "pt": "Fale com: #1",
-                            "fr": "Aller voir #1",
                             "es": "Ve a ver a #1",
+                            "fr": "Aller voir #1",
                             "de": "#1 sprechen"
                         },
                         "m_id": 1,
                         "createdAt": "2024-12-03T00:35:21.823Z",
-                        "updatedAt": "2025-01-07T22:51:09.161Z"
+                        "updatedAt": "2025-01-14T09:47:51.278Z"
                     },
                     "map": {
                         "_id": "674e524464788cc74141f007",
@@ -3304,8 +3304,8 @@
                             "id": "564500",
                             "en": "Imp Village Platform",
                             "pt": "Plataforma do vilarejo dos Diabretes",
-                            "fr": "Plate-forme du Village des Brigandins",
                             "es": "Plataforma del pueblo de los salteadorillos",
+                            "fr": "Plate-forme du Village des Brigandins",
                             "de": "Dorf der Brigandiner – Plattform"
                         },
                         "capabilityAllowChallenge": true,
@@ -3339,7 +3339,7 @@
                         "hasPublicPaddock": false,
                         "m_id": 154272257,
                         "createdAt": "2024-12-03T00:35:16.117Z",
-                        "updatedAt": "2025-01-07T22:50:19.539Z",
+                        "updatedAt": "2025-01-14T09:47:02.064Z",
                         "img": {
                             "1": "https://api.dofusdb.fr/img/maps/1/154272257.jpg",
                             "0.25": "https://api.dofusdb.fr/img/maps/0.25/154272257.jpg",
@@ -3533,13 +3533,13 @@
                                 "id": "8323",
                                 "en": "Girle Pylote",
                                 "pt": "Girle Pylote",
-                                "fr": "Girle Pylote",
                                 "es": "Girle Pylot",
+                                "fr": "Girle Pylote",
                                 "de": "Girle Pylote"
                             },
                             "m_id": 383,
                             "createdAt": "2024-12-03T00:35:21.325Z",
-                            "updatedAt": "2025-01-07T22:51:06.985Z",
+                            "updatedAt": "2025-01-14T09:47:49.635Z",
                             "type": "npcs"
                         }
                     ]
@@ -3580,13 +3580,13 @@
                             "id": "56293",
                             "en": "Find the map: #1",
                             "pt": "Descubra o mapa: #1",
-                            "fr": "Découvrir la carte : #1",
                             "es": "Descubre el mapa: #1",
+                            "fr": "Découvrir la carte : #1",
                             "de": "Die Karte \"#1\" entdecken"
                         },
                         "m_id": 4,
                         "createdAt": "2024-12-03T00:35:21.823Z",
-                        "updatedAt": "2025-01-07T22:51:09.161Z"
+                        "updatedAt": "2025-01-14T09:47:51.278Z"
                     },
                     "map": {
                         "_id": "674e524464788cc74141f009",
@@ -3689,13 +3689,13 @@
                             "id": "56295",
                             "en": "#1",
                             "pt": "#1",
-                            "fr": "#1",
                             "es": "#1",
+                            "fr": "#1",
                             "de": "#1"
                         },
                         "m_id": 0,
                         "createdAt": "2024-12-03T00:35:21.823Z",
-                        "updatedAt": "2025-01-07T22:51:09.161Z"
+                        "updatedAt": "2025-01-14T09:47:51.278Z"
                     },
                     "map": {
                         "_id": "674e524464788cc74141efff",
@@ -3795,13 +3795,13 @@
                             "id": "56295",
                             "en": "#1",
                             "pt": "#1",
-                            "fr": "#1",
                             "es": "#1",
+                            "fr": "#1",
                             "de": "#1"
                         },
                         "m_id": 0,
                         "createdAt": "2024-12-03T00:35:21.823Z",
-                        "updatedAt": "2025-01-07T22:51:09.161Z"
+                        "updatedAt": "2025-01-14T09:47:51.278Z"
                     },
                     "map": {
                         "_id": "674e524464788cc74141f003",
@@ -3901,13 +3901,13 @@
                             "id": "114534",
                             "en": "Defeat #2 #1 in a single fight",
                             "pt": "Derrote #2x \"#1\" em um único combate",
-                            "fr": "Vaincre x#2 #1 en un seul combat",
                             "es": "Vence a #2 x #1 en un solo combate",
+                            "fr": "Vaincre x#2 #1 en un seul combat",
                             "de": "In einem Kampf besiegen: #1 x#2"
                         },
                         "m_id": 6,
                         "createdAt": "2024-12-03T00:35:21.823Z",
-                        "updatedAt": "2025-01-07T22:51:09.161Z"
+                        "updatedAt": "2025-01-14T09:47:51.278Z"
                     },
                     "map": {
                         "_id": "674e524464788cc74141f003",
@@ -4215,7 +4215,7 @@
                             "animFunList": [],
                             "drops": [
                                 {
-                                    "dropId": 2463,
+                                    "dropId": 2750,
                                     "monsterId": 4131,
                                     "objectId": 18360,
                                     "percentDropForGrade1": 100,
@@ -4300,8 +4300,8 @@
                                 "id": "565490",
                                 "en": "Sanctuary Guardian",
                                 "pt": "Guardiã do santuário",
-                                "fr": "Gardienne du Sanctuaire",
                                 "es": "Guardiana del santuario",
+                                "fr": "Gardienne du Sanctuaire",
                                 "de": "Heiligtum-Wächter"
                             },
                             "useSummonSlot": true,
@@ -4324,8 +4324,8 @@
                             "slug": {
                                 "en": "sanctuary guardian",
                                 "pt": "guardia do santuario",
-                                "fr": "gardienne du sanctuaire",
                                 "es": "guardiana del santuario",
+                                "fr": "gardienne du sanctuaire",
                                 "de": "heiligtum-wachter"
                             },
                             "tags": [
@@ -4334,7 +4334,7 @@
                                 "water"
                             ],
                             "createdAt": "2024-12-03T00:35:17.778Z",
-                            "updatedAt": "2025-01-07T22:50:22.555Z",
+                            "updatedAt": "2025-01-14T09:47:05.250Z",
                             "img": "https://api.dofusdb.fr/img/monsters/657.png",
                             "type": "monsters"
                         },
@@ -4377,13 +4377,13 @@
                             "id": "56293",
                             "en": "Find the map: #1",
                             "pt": "Descubra o mapa: #1",
-                            "fr": "Découvrir la carte : #1",
                             "es": "Descubre el mapa: #1",
+                            "fr": "Découvrir la carte : #1",
                             "de": "Die Karte \"#1\" entdecken"
                         },
                         "m_id": 4,
                         "createdAt": "2024-12-03T00:35:21.823Z",
-                        "updatedAt": "2025-01-07T22:51:09.161Z"
+                        "updatedAt": "2025-01-14T09:47:51.278Z"
                     },
                     "map": {
                         "_id": "674e524464788cc74141f005",
@@ -4486,13 +4486,13 @@
                             "id": "395670",
                             "en": "Talk to #1",
                             "pt": "Fale com: #1",
-                            "fr": "Aller voir #1",
                             "es": "Ve a ver a #1",
+                            "fr": "Aller voir #1",
                             "de": "#1 sprechen"
                         },
                         "m_id": 1,
                         "createdAt": "2024-12-03T00:35:21.823Z",
-                        "updatedAt": "2025-01-07T22:51:09.161Z"
+                        "updatedAt": "2025-01-14T09:47:51.278Z"
                     },
                     "map": {
                         "_id": "674e524464788cc74141f005",
@@ -4806,13 +4806,13 @@
                                 "id": "565546",
                                 "en": "Aguabrial",
                                 "pt": "Aguabrial",
-                                "fr": "Aguabrial",
                                 "es": "Aguabrial",
+                                "fr": "Aguabrial",
                                 "de": "Aguabrial"
                             },
                             "m_id": 2953,
                             "createdAt": "2024-12-03T00:35:21.325Z",
-                            "updatedAt": "2025-01-07T22:51:07.670Z",
+                            "updatedAt": "2025-01-14T09:47:50.065Z",
                             "type": "npcs"
                         }
                     ]
@@ -4853,13 +4853,13 @@
                             "id": "395670",
                             "en": "Talk to #1",
                             "pt": "Fale com: #1",
-                            "fr": "Aller voir #1",
                             "es": "Ve a ver a #1",
+                            "fr": "Aller voir #1",
                             "de": "#1 sprechen"
                         },
                         "m_id": 1,
                         "createdAt": "2024-12-03T00:35:21.823Z",
-                        "updatedAt": "2025-01-07T22:51:09.161Z"
+                        "updatedAt": "2025-01-14T09:47:51.278Z"
                     },
                     "map": {
                         "_id": "674e524464788cc74141f005",
@@ -5063,13 +5063,13 @@
                                 "id": "565541",
                                 "en": "Ereziah Melkewel",
                                 "pt": "Ereziah Melkewel",
-                                "fr": "Ereziah Melkewel",
                                 "es": "Ereziah Melkewel",
+                                "fr": "Ereziah Melkewel",
                                 "de": "Ereziah Melkewel"
                             },
                             "m_id": 2954,
                             "createdAt": "2024-12-03T00:35:21.325Z",
-                            "updatedAt": "2025-01-07T22:51:07.670Z",
+                            "updatedAt": "2025-01-14T09:47:50.065Z",
                             "type": "npcs"
                         }
                     ]
@@ -5110,13 +5110,13 @@
                             "id": "56304",
                             "en": "Talk to #1 again",
                             "pt": "Fale com #1 novamente",
-                            "fr": "Retourner voir #1",
                             "es": "Vuelve a ver a #1",
+                            "fr": "Retourner voir #1",
                             "de": "Zu #1 zurückkehren"
                         },
                         "m_id": 9,
                         "createdAt": "2024-12-03T00:35:21.823Z",
-                        "updatedAt": "2025-01-07T22:51:09.162Z"
+                        "updatedAt": "2025-01-14T09:47:51.278Z"
                     },
                     "map": {
                         "_id": "674e524464788cc74141e91c",
@@ -7524,13 +7524,13 @@
                                 "id": "360884",
                                 "en": "Meriana",
                                 "pt": "Meriana",
-                                "fr": "Mériana",
                                 "es": "Meriana",
+                                "fr": "Mériana",
                                 "de": "Meriana"
                             },
                             "m_id": 2205,
                             "createdAt": "2024-12-03T00:35:21.325Z",
-                            "updatedAt": "2025-01-07T22:51:07.336Z",
+                            "updatedAt": "2025-01-14T09:47:49.922Z",
                             "type": "npcs"
                         }
                     ]
