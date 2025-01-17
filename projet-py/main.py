@@ -1,70 +1,111 @@
-import sys  # noqa: D100
+"""."""
+import json
+import sys
+from pathlib import Path
 
-from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5.QtCore import Qt
+from PyQt5.QtGui import QFont
+from PyQt5.QtWidgets import (
+  QApplication,
+  QLabel,
+  QLineEdit,
+  QListWidget,
+  QMainWindow,
+  QPushButton,
+  QStackedWidget,
+  QVBoxLayout,
+  QWidget,
+)
 from use_data import Data
 
 
-def create_main_menu_button(switch_menu) -> QtWidgets:
+def create_main_menu_button(switch_menu) -> QPushButton:
   """Create a main menu button for navigation."""
-  main_menu_button = QtWidgets.QPushButton("Main Menu")
+  main_menu_button = QPushButton("Main Menu")
   main_menu_button.setStyleSheet("padding: 5px; font-size: 12px;")
   main_menu_button.setFixedSize(100, 30)
   main_menu_button.clicked.connect(lambda: switch_menu("main"))
   return main_menu_button
 
-class OverlayMenu(QtWidgets.QWidget):
-  """Overlay Menu Widget."""
 
-  def __init__(self, unique_coordinates:list, switch_menu) -> None:
-    super().__init__()
-    self.unique_coordinates = unique_coordinates
-    self.init_ui(switch_menu)
+class OverlayMenu(QWidget):
+    """Overlay Menu Widget."""
 
-  def init_ui(self, switch_menu) -> None:
-    """Init Overlay UI."""
-    layout = QtWidgets.QVBoxLayout(self)
-    layout.setContentsMargins(10, 10, 10, 10)
+    def __init__(self, unique_coordinates: list, switch_menu):
+        """."""
+        super().__init__()
+        self.unique_coordinates = unique_coordinates
+        self.init_ui(switch_menu)
 
-    # Add labels for coordinates
-    for coord in self.unique_coordinates:
-      label = QtWidgets.QLabel(str(coord), self)
-      label.setFont(QtGui.QFont("Arial", 14))
-      label.setStyleSheet("""
-          background-color: white;
-          padding: 5px;
-      """)
-      label.setAlignment(QtCore.Qt.AlignCenter)
-      layout.addWidget(label)
+    def init_ui(self, switch_menu) -> None:
+        """Init Overlay UI."""
+        layout = QVBoxLayout(self)
+        layout.setContentsMargins(10, 10, 10, 10)
 
-    # Add main menu button
-    main_menu_button = create_main_menu_button(switch_menu)
-    layout.addWidget(main_menu_button, alignment=QtCore.Qt.AlignTop | QtCore.Qt.AlignRight)
+        # Add labels for coordinates
+        for coord in self.unique_coordinates:
+            label = QLabel(str(coord), self)
+            label.setFont(QFont("Arial", 14))
+            label.setStyleSheet("""
+                background-color: white;
+                padding: 5px;
+            """)
+            label.setAlignment(Qt.AlignCenter)
+            layout.addWidget(label)
 
-    self.setLayout(layout)
+        # Add main menu button
+        main_menu_button = create_main_menu_button(switch_menu)
+        layout.addWidget(main_menu_button, alignment=Qt.AlignTop | Qt.AlignRight)
 
+        self.setLayout(layout)
 
-class SearchMenu(QtWidgets.QWidget):
-  """Search Menu Widget."""
+class SearchMenu(QWidget):
+    """Search Menu Widget for quests."""
 
-  def __init__(self, switch_menu):
-      super().__init__()
-      self.init_ui(switch_menu)
+    def __init__(self, switch_menu):
+        """Initialize the SearchMenu."""
+        super().__init__()
+        self.switch_menu = switch_menu
+        self.db_file = "Database/other/all.json"
+        self.data = self.load_data()
+        self.filtered_results = []
+        self.init_ui()
 
-  def init_ui(self, switch_menu) -> None:
-      """Init Search Menu UI."""
-      layout = QtWidgets.QVBoxLayout(self)
-      label = QtWidgets.QLabel("Search Menu: Add functionality here")
-      label.setAlignment(QtCore.Qt.AlignCenter)
-      layout.addWidget(label)
+    def init_ui(self):
+        layout = QVBoxLayout(self)
+        self.search_input = QLineEdit(self)
+        self.search_input.setPlaceholderText("Recherchez une quête...")
+        self.search_input.textChanged.connect(self.update_search_query)
+        self.results_list = QListWidget(self)
 
-      # Add main menu button
-      main_menu_button = create_main_menu_button(switch_menu)
-      layout.addWidget(main_menu_button, alignment=QtCore.Qt.AlignTop | QtCore.Qt.AlignRight)
+        layout.addWidget(self.search_input)
+        layout.addWidget(self.results_list)
+        layout.addWidget(create_main_menu_button(self.switch_menu))
+        self.setLayout(layout)
 
-      self.setLayout(layout)
+    def load_data(self):
+        try:
+            with Path(self.db_file).open(encoding="utf-8") as f:
+                return json.load(f)
+        except (FileNotFoundError, json.JSONDecodeError):
+            return {}
 
+    def update_search_query(self):
+        query = self.search_input.text()
+        self.filtered_results = [
+            (name, quest_id) for name, quest_id in self.data.items()
+            if query.lower() in name.lower()
+        ]
+        self.update_results_list()
 
-class AboutMenu(QtWidgets.QWidget):
+    def update_results_list(self):
+        self.results_list.clear()
+        for name, quest_id in self.filtered_results:
+            self.results_list.addItem(f"{name} - ID: {quest_id}")
+        if not self.filtered_results:
+            self.results_list.addItem("Aucune quête trouvée.")
+
+class AboutMenu(QWidget):
   """About Menu Widget."""
 
   def __init__(self, switch_menu) -> None:
@@ -74,18 +115,18 @@ class AboutMenu(QtWidgets.QWidget):
 
   def init_ui(self, switch_menu) -> None:
       """Init About Menu UI."""
-      layout = QtWidgets.QVBoxLayout(self)
-      label = QtWidgets.QLabel("About Menu: Add details here")
-      label.setAlignment(QtCore.Qt.AlignCenter)
+      layout = QVBoxLayout(self)
+      label = QLabel("About Menu: Add details here")
+      label.setAlignment(Qt.AlignCenter)
       layout.addWidget(label)
 
       # Add main menu button
       main_menu_button = create_main_menu_button(switch_menu)
-      layout.addWidget(main_menu_button, alignment=QtCore.Qt.AlignTop | QtCore.Qt.AlignRight)
+      layout.addWidget(main_menu_button, alignment=Qt.AlignTop | Qt.AlignRight)
 
       self.setLayout(layout)
 
-class MainMenu(QtWidgets.QStackedWidget):
+class MainMenu(QStackedWidget):
   """Main Menu managing multiple menus."""
 
   def __init__(self, unique_coordinates: list) -> None:
@@ -111,19 +152,19 @@ class MainMenu(QtWidgets.QStackedWidget):
 
   def create_main_menu(self) -> None:
     """Create the main menu widget."""
-    widget = QtWidgets.QWidget()
-    layout = QtWidgets.QVBoxLayout(widget)
+    widget = QWidget()
+    layout = QVBoxLayout(widget)
 
     # Navigation buttons
-    search_button = QtWidgets.QPushButton("Search Menu")
+    search_button = QPushButton("Search Menu")
     search_button.clicked.connect(lambda: self.switch_menu("search"))
     layout.addWidget(search_button)
 
-    overlay_button = QtWidgets.QPushButton("Overlay Menu")
+    overlay_button = QPushButton("Overlay Menu")
     overlay_button.clicked.connect(lambda: self.switch_menu("overlay"))
     layout.addWidget(overlay_button)
 
-    about_button = QtWidgets.QPushButton("About Menu")
+    about_button = QPushButton("About Menu")
     about_button.clicked.connect(lambda: self.switch_menu("about"))
     layout.addWidget(about_button)
 
@@ -153,7 +194,7 @@ def main() -> None:
     unique_coordinates = extractor.get_unique_coordinates()
 
     # Create and run the application
-    app = QtWidgets.QApplication(sys.argv)
+    app = QApplication(sys.argv)
     main_menu = MainMenu(unique_coordinates)
     main_menu.show()
     sys.exit(app.exec_())
