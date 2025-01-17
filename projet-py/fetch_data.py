@@ -9,7 +9,7 @@ class FetchItem:
     """Fetch data from an API."""
 
     url: str = "https://api.dofusdb.fr"
-    available_ids: list = 375, 2513 # Available api requests range
+    available_ids:tuple = 375, 2513 # Available api requests range
 
     def __init__(self, category: str, category_id: str) -> None:
         """Initialize FetchItem with category and category_id."""
