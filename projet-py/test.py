@@ -1,8 +1,14 @@
 import json
-from PyQt5.QtWidgets import QMainWindow, QLineEdit, QListWidget, QVBoxLayout, QWidget
+from pathlib import Path
+
+from PyQt5.QtWidgets import QLineEdit, QListWidget, QMainWindow, QVBoxLayout, QWidget
+
 
 class SearchMenu(QMainWindow):
+    """."""
+
     def __init__(self):
+        """."""
         super().__init__()
 
         # Initialize the UI
@@ -10,7 +16,7 @@ class SearchMenu(QMainWindow):
         self.setGeometry(100, 100, 400, 300)
 
         # Load the quest data
-        self.db_file = 'quests.json'  # Path to your JSON file
+        self.db_file = "Databse/quests/1653.json"
         self.data = self.load_data()
 
         # Set up UI components
@@ -28,25 +34,25 @@ class SearchMenu(QMainWindow):
         container.setLayout(layout)
         self.setCentralWidget(container)
 
-        self.filtered_results = []  # List to store filtered results
+        self.filtered_results = []
 
     def load_data(self):
-        """Loads the quest data from the JSON file."""
+        """Load the quest data from the JSON file."""
         try:
-            with open(self.db_file, 'r') as f:
-                return json.load(f)  # Assuming the file contains a dictionary of quest names and IDs
+            with Path(self.db_file).open() as f:
+                return json.load(f)
         except FileNotFoundError:
             print("Database file not found!")
             return {}
 
     def update_search_query(self):
-        """Updates the search query and filters results."""
+        """Update the search query and filters results."""
         query = self.search_input.text()
         self.filtered_results = self.search_quests(query)
         self.update_results_list()
 
     def search_quests(self, query):
-        """Filters the quest data based on the search query."""
+        """Filter the quest data based on the search query."""
         # Simple case-insensitive search for quests containing the query
         return [
             (name, quest_id) for name, quest_id in self.data.items()
@@ -54,13 +60,13 @@ class SearchMenu(QMainWindow):
         ]
 
     def update_results_list(self):
-        """Updates the list widget with filtered results."""
+        """Update the list widget with filtered results."""
         self.results_list.clear()  # Clear previous results
         for name, quest_id in self.filtered_results:
             self.results_list.addItem(f"{name} - ID: {quest_id}")
 
 # Example usage
-if __name__ == '__main__':
+if __name__ == "__main__":
     from PyQt5.QtWidgets import QApplication
 
     app = QApplication([])

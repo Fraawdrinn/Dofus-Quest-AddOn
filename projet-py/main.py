@@ -147,7 +147,7 @@ def main() -> None:
     # Load data
     data_dir: str = "quests"
     data_to_fetch: str = "1653.json"
-    file_path: str = f"projet-py/Database/{data_dir}/{data_to_fetch}"
+    file_path: str = f"Database/{data_dir}/{data_to_fetch}"
 
     extractor = Data(file_path)
     unique_coordinates = extractor.get_unique_coordinates()
