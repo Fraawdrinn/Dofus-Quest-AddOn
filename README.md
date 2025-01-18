@@ -16,9 +16,6 @@ Add-on overlay for Dofus players
 use qt pyside
 
 TODO:
- - Create a menu (and search alogrithm)
- - - Match quests name and id
-
  - Data analyse
 
  - In-game window
